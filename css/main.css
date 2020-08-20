@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://necolas.github.io/normalize.css/latest/normalize.css");
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  padding: 1.5625rem;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.93);
+  border-radius: 0.375rem;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  width: 23rem;
+  border-radius: inherit;
+  padding: 3.125rem 2.5rem;
+}
+
+.row {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.row--first {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.row--last {
+  margin-bottom: 0;
+}
+
+.image {
+  width: 7rem;
+  border-radius: 100%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  pointer-events: none;
+}
+
+.title {
+  color: rgb(49, 63, 71);
+  letter-spacing: 0.2rem;
+  width: calc(100% + 0.4rem);
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.hr {
+  width: 50%;
+  position: relative;
+  padding: 0px;
+  border-width: 0px;
+  height: 1px;
+  margin-top: -0.5px;
+  border-top: 1px solid rgb(200, 204, 207);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+  text-transform: uppercase;
+  color: rgb(49, 63, 71);
+  letter-spacing: 0.225rem;
+  width: calc(100% + 0.225rem);
+  font-size: 0.75em;
+  line-height: 1.875;
+  font-weight: 200;
+}
+
+.icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(200, 204, 207);
+  border-image: initial;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.icon__github {
+  fill: #181717;
+}
+
+.icon__linkedin {
+  fill: #0077b5;
+}
